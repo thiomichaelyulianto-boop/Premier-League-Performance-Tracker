@@ -25,3 +25,28 @@ The raw dataset (574 records sourced from FBref/Kaggle) was transformed and norm
 * **Text Extraction:** Cleaned nation fields using custom split delimiters to isolate standardized country codes.
 * **Integrity Handling:** Handled missing rows, dropping incomplete player entries down to 573 clean observations.
 * **Relationship Management:** Established 1-to-Many (`1:*`) relationships in Power Pivot connecting dimensions to the central fact table.
+
+## Key Business Findings & Tactical Insights
+* Penalty Dependency vs. Open-Play Efficiency: Mohamed Salah led the league with 47 direct goal contributions (29 goals, 18 assists; 20 open-play goals). Visualizing penalty contributions revealed major stylistic variances: Justin Kluivert (Bournemouth) relied on penalties for 50% of his goals (6 of 12), whereas Matheus Cunha (Wolves) recorded 100% of his 15 goals from open play.
+* Workload & Squad Aging Risk: The core productive demographic (Ages 22–28) captured 64% of total league minutes (483,469 minutes). Young talents (U-21) accounted for only 13% of total playing time, signaling an urgent squad succession and regeneration bottleneck across several clubs.
+* Disciplinary Anomalies: Samuel Amo-Ameyaw recorded the highest card frequency at 0.33 cards per 90 minutes (~1 card every 3 full matches), identifying tactical fouls but also highlighting sample-size skew on lower-minute fringe players.
+* Talent Pipeline & Homegrown Balance: Domestic English talent represented 33.9% (194 of 573 players), followed by Brazil (34 players), France (25), and Portugal (23), providing benchmark data for league homegrown roster compliance.
+
+## Strategic Recommendations
+* Scouting Strategy: Incorporate Non-Penalty Goal Ratio and Open-Play Conversion metrics as non-negotiable filters to avoid purchasing overvalued penalty-inflated attackers.
+* Squad Regeneration Policy: Mandate cup/low-risk match rotation quotas to elevate U-21 minutes from 13% to at least 20%, dampening injury risks among senior starters.
+* Disciplinary Thresholds: Institute minimum playing-time filters before ranking per-90 metrics to eliminate low-sample statistical bias.
+* Recruitment Cost Optimization: Satisfy homegrown quotas via low-cost academy pathways while reserving marquee transfer budgets for undervalued foreign talent pools.
+
+## Tech Stack & Tools
+* Platform: Microsoft Excel (Power Query, Power Pivot, Pivot Charts)
+* Modeling Paradigm: Star Schema, Dimensional Modeling, Relational Integrity
+* Formulas: Data Analysis Expressions (DAX)
+
+## Contributors 
+* Nacito Florisen Astari 
+* Aditya Maulana
+* Aditya Naufal Erlangga
+* Gideon Manggaprouw
+* Mohamad Arya Fadlullah
+* Thio Michael Yulianto
